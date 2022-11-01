@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-02T01:41:20 PKT" name="Suite" finished-at="2022-11-02T01:41:52 PKT" duration-ms="31428">
+    <groups>
+    </groups>
+    <test started-at="2022-11-02T01:41:20 PKT" name="Test" finished-at="2022-11-02T01:41:52 PKT" duration-ms="31428">
+      <class name="TCPackage_1.TC_1">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TCPackage_1.TC_1@6bd61f98]" started-at="2022-11-02T01:41:20 PKT" name="setUp" finished-at="2022-11-02T01:41:32 PKT" duration-ms="11240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTitle()[pri:0, instance:TCPackage_1.TC_1@6bd61f98]" started-at="2022-11-02T01:41:32 PKT" name="verifyTitle" finished-at="2022-11-02T01:41:32 PKT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TCPackage_1.TC_1@6bd61f98]" started-at="2022-11-02T01:41:32 PKT" name="tearDown" finished-at="2022-11-02T01:41:33 PKT" duration-ms="1049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TCPackage_1.TC_1@6bd61f98]" started-at="2022-11-02T01:41:33 PKT" name="setUp" finished-at="2022-11-02T01:41:50 PKT" duration-ms="17774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifylogo()[pri:0, instance:TCPackage_1.TC_1@6bd61f98]" started-at="2022-11-02T01:41:50 PKT" name="verifylogo" finished-at="2022-11-02T01:41:51 PKT" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TCPackage_1.TC_1@6bd61f98]" started-at="2022-11-02T01:41:51 PKT" name="tearDown" finished-at="2022-11-02T01:41:52 PKT" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TCPackage_1.TC_1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
