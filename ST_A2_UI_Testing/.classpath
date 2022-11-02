@@ -83,5 +83,6 @@
 	<classpathentry kind="lib" path="E:/selenium/selenium-java-4.5.3/lib/netty-transport-classes-kqueue-4.1.84.Final.jar"/>
 	<classpathentry kind="lib" path="E:/selenium/selenium-java-4.5.3/lib/netty-transport-native-epoll-4.1.84.Final.jar"/>
 	<classpathentry kind="lib" path="E:/selenium/selenium-java-4.5.3/lib/netty-transport-native-kqueue-4.1.84.Final.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
