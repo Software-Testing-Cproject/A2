@@ -19,22 +19,17 @@ public class TC_1 {
 	   { 
 	   System.setProperty("webdriver.chrome.driver", "E:\\7th sem\\SE\\chromedriver.exe");
 	   driver = new ChromeDriver();
-	   driver.get("http://amazon.in");
+	   driver.get("http://localhost/");
 	   driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 	   }
-	   @Test
-	   public void verifyTitle()
-	   {
-	   	String actualTitle=driver.getTitle();
-	   	String expectedTitle= "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
-	   	Assert.assertEquals(actualTitle, expectedTitle);
-	   }
+	   
 	   @Test
 	   public void verifylogo()
 	   {
-		 boolean flage=driver.findElement(By.xpath("//a[@id='nav-logo-sprites']")).isDisplayed();  
+		   
+		 boolean flage=driver.findElement(By.xpath("//div[@class='logo']//a")).isDisplayed();  
 		 Assert.assertTrue(flage);
 	   }
 	   	@AfterMethod
