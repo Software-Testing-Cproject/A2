@@ -1,18 +1,1 @@
-# A2
-UI and API testing for Shopizer
-Meeting no 1
-
-The first meeting  was with sir.
-
-Teams Members: Javeria Zulfiqar
-               Farwa Batool
-               Hamna Arifeen
-
-Date:19 October-2022
-
-Issuse Discussed:
-
-1-Understanding of Task 2 and how to utilize the Automating testing Softwares.
-
-2- How to use github and how to push the code from eclipse to gtihub
 
