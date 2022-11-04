@@ -17,7 +17,16 @@ driver.manage().window().maximize();
 }
 @Test
 public void verify()
-{
+{	//getting the title of the website
+	String actualTitle = driver.getTitle();
+    System.out.println(actualTitle);
+	//expected title
+	String expectedTitle = "Default store";
+	if(actualTitle.equalsIgnoreCase(expectedTitle))//if actual matched
+		System.out.println("Title Matched as the expected one");
+	else
+		System.out.println("Title didn't match");
+	
 
 }
 	@AfterMethod
