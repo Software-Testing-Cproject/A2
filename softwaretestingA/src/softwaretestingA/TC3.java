@@ -11,8 +11,14 @@ public class TC3 {
 	{ 
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Farwa\\Downloads\\chromedriver_win32\\chromedriver.exe");
 	driver = new ChromeDriver();
-	driver.get("http://localhost/product/chair");
+	///implicitly wait before going to url
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+	///going to respective url
+	driver.get("http://localhost/");
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+	///maximizing the window
 	driver.manage().window().maximize();
+
 
 	}
 	@Test
