@@ -18,24 +18,39 @@ public class TC3 {
 	@Test
 	public void verify()
 	{
+			///given test case
 		System.out.println("Test case");
-		System.out.println("Given I have added products in the Shopping Cart When I click on check out from Home page Then It take me to check out page");
-		driver.findElement(By.className("active")).click(); //ADD THE prdocut to cart
-		driver.findElement(By.className("icon-cart")).click(); //press the cart icon
-		 driver.findElement(By.name("Checkout")).click(); //using Selenium click button method, click on checkout button
-		System.out.println("Successful in proceeding to Checkout Page");
+		System.out.println("Given I have added  products in the Shopping Cart WHEN I click on check out from Home page THEN It take me to check out page");
+		Actions s=new Actions(driver);
+		///finding path to the cart button icon and then press it
+		WebElement mytarget1 = new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/header/div[2]/div[1]/div/div[3]/div/div[2]/button")));
+		System.out.println("Performing the cart icon clicking");
+		//moving to the element define in xpath and clicking on it automatically
+		s.moveToElement(mytarget1);
+		s.click(mytarget1);
+		s.build();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(4));
+		s.perform();
+		/////goinfg to checkout page from icon cart
+		WebElement mytarget2 = new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/header/div[2]/div[1]/div/div[3]/div/div[2]/div/div[2]/a[2]")));
+		System.out.println("Performing the checkout clicking");
+		//moving to the element define in xpath and clicking on it automatically
+		s.moveToElement(mytarget2);
+		s.click(mytarget2);
+		s.build();
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-		driver.switchTo().window(tabs.get(1));//jumping to next window
+		driver.switchTo().window(tabs.get(1));
 		//driver control is switched to new tab or new window
-		    String newUrl = driver.getCurrentUrl();//getting url of new windo
-
-	    if(newUrl.equalsIgnoreCase("http://localhost/checkout"))//comparing the URL
+		String newUrl = driver.getCurrentUrl();
+		    ///comparing current url with checkout page url 
+	    if(newUrl.equalsIgnoreCase("http://localhost/checkout"))
 	    {
-	        System.out.println("Successful in proceeding to Checkout page ");	
+	        System.out.println("Successfully direct to checkout page");	
+	        driver.quit();
 	        
 	    }
 	    else {
-	        System.out.println("Failed in proceeding to Checkout page");
+	        System.out.println("Failed");
 			
 	    }
 
