@@ -7,6 +7,7 @@ public class TC4 {
  @Test
 	public void verify()
 	{
+			 System.out.println("API testing for Shop Now Page HTTP code");
 	 ////putting the url 
 		Response res=RestAssured.get("http://localhost/!#");
 		//getting http code
