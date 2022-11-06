@@ -58,6 +58,6 @@ public class TC_3 {
 	   	@AfterMethod
 	   	public void tearDown()
 	   	{ 
-	   		//driver.quit();
+	   		driver.quit();
 	   	}
 }
