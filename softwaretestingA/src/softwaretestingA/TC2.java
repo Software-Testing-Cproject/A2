@@ -30,12 +30,12 @@ public class TC2 {
 ///TES CASE
 		System.out.println("Test case");
 		System.out.println("When i click on ‘Shop’ <button on Home Page Then  it should <open> the Product Page And do not give any error");
-		
+	
 	///Finding and clicking on shop now button 
 		driver.findElement(By.xpath("//a[text()='Shop Now']")).click();
 		///getting the tabs of the window
 		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-		//getting the 
+
 		driver.switchTo().window(tabs.get(1));
 		//driver control is switched to new tab or new window
 
@@ -47,12 +47,6 @@ public class TC2 {
 	        driver.quit();
 	        
 	    }
-	    else {
-	        System.out.println("FAILED");
-			
-	    }
-	  
-
 
 	}
 		@AfterMethod
