@@ -1,32 +1,16 @@
 package softwaretestingA;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+import static io.restassured.RestAssured.given;
 public class TC5 {
-	WebDriver driver;
-	@BeforeMethod
-	public void setUp()
-	{ 
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Farwa\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	driver = new ChromeDriver();
-	driver.get("http://localhost/product/chair");
-	driver.manage().window().maximize();
-
-	}
 	@Test
-	public void verify()
-	{
-
+public void test_getAllCustomerList()///getting all the customer list
+{
+		given()
+		 .when()
+		  .get("https://rest-api.shopizer.com/api/v1/private/customers")///putting url of the respective page
+		  .then()
+		  .statusCode(200);///ok for 200
 	}
-		@AfterMethod
-		public void tearDown()
-		{ 
-			driver.quit();
-		}
-
 
 }
