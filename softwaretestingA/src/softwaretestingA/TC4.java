@@ -1,31 +1,23 @@
 package softwaretestingA;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
+import org.junit.Assert;
+import org.junit.Test;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 public class TC4 {
-	WebDriver driver;
-	@BeforeMethod
-	public void setUp()
-	{ 
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Farwa\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	driver = new ChromeDriver();
-	driver.get("http://localhost/product/chair");
-	driver.manage().window().maximize();
-
-	}
-	@Test
+ @Test
 	public void verify()
 	{
+	 ////putting the url 
+		Response res=RestAssured.get("http://localhost/!#");
+		//getting http code
+int actualcode=res.getStatusCode();
+System.out.println("Actual code of the shop Now page");
+System.out.println(actualcode);
+System.out.println("Expected code of the shop Now page");
+System.out.println("200");
+//comparision done
+Assert.assertEquals(actualcode, 200);
 
 	}
-		@AfterMethod
-		public void tearDown()
-		{ 
-			driver.quit();
-		}
 
 }
