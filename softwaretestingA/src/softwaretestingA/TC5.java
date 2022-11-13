@@ -5,9 +5,7 @@ import org.testng.annotations.Test;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
-
 import java.util.HashMap;
-
 public class TC5 {
 	@Test
 public void test_updatePasswordCustomer()
