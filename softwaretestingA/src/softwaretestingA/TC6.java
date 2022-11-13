@@ -35,7 +35,7 @@ public void test_delCustomer()
 			//404	Not Found
 		  .statusCode(200)//expected code
 		  .log().body()
-	    .extract().response();///extract the response
+	          .extract().response();///extract the response
 	String jsonstr=r.asString();
 	Assert.assertEquals(jsonstr.contains("Customer deleted Successfully"), true);
 	}
