@@ -1,24 +1,43 @@
 package softwaretestingA;
-import io.restassured.response.Response;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
 import static io.restassured.RestAssured.given;
+
+import java.util.HashMap;
 
 public class TC6 {
 	@Test
-public void test_delCustomer()//deleting the customer
+public void test_delCustomer()
 {
-		Response r=
+		///for delete the customer we need following categories
+		//1. Id of the customer
+		//2. Respective Store
+		//Hashmap Data contain id and store of the customer which we want to delete
+		HashMap data=new HashMap();
+		data.put("id", "45");
+		data.put("store", "SuperNew");
+			Response r=
 		given()
+		.contentType("application/json")
+		   .body(data)
 		 .when()
-		  .get("https://rest-api.shopizer.com/api/v1/private/customer/123")//putting url which include ID
+		 //here putting the url
+		  .post("https://rest-api.shopizer.com/api/v1/private/customer")
 		  .then()
-		  .statusCode(200)//if successful then code 200
+		//All the codes description that describe each return code result
+			//200  OK
+            //201	 Created
+			//401	 Unauthorized
+			//403	Forbidden
+			//404	Not Found
+		  .statusCode(200)//expected code
 		  .log().body()
-	    .extract().response();
-		String jsonstr=r.asString();
-		Assert.assertEquals(jsonstr.contains("Data Saved Successfully"), true);//matching with the statement which we get after the customer del
+	    .extract().response();///extract the response
+	String jsonstr=r.asString();
+	Assert.assertEquals(jsonstr.contains("Customer deleted Successfully"), true);
 	}
 
 }
