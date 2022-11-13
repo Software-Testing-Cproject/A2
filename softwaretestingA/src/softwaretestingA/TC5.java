@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 public class TC5 {
 	@Test
-public void test_delCustomer()
+public void test_updatePasswordCustomer()
 {
 		///for reset password we need following categories
 		//1. current password
