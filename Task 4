@@ -10,6 +10,7 @@ Overloaded methods for various HTTP methods, including GET, POST, PUT, DELETE, e
 3- They set Accept: application/JSON and Content-Type: application/JSON.
 4- They set the appropriate HTTP method like POST, DELETE, PUT.a
 5- They send a request to the Rest service server.
+6- Using the Response Code, such as 200 OK as a success, they confirm that the response is what was anticipated.
 
 Our Testing strategy vs Open source project testing
 
