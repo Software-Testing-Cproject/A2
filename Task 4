@@ -17,6 +17,36 @@ They followed the steps manually by using postman tool
 6- Using the Response Code, such as 200 OK as a success, they confirm that the response is what was anticipated.
 7- Then Lastly, they compare the Response Body to their benchmark file to ensure that it is as expected.
 
+------------------Setting Up TestNG framework-------------
+firstly we download JDK installer (selenium-java libraries) for window 
+Sencond we use ECLISE as Integrated Development Environment for our API and UI automaion Test Suite
+Thirdly we run TestNG for the Eclipse ping-in
+
+1. steps in Eclipse:
+  -> select Help
+  -> click on Add ->Enter http://beust.com/eclipse/
+  -> select the checkbox of TestNG and click Next button
+  
+  
+2. Project SetUp:
+  -> create File -> New ->Java Project ->Name it (let suppose we named it as testSuit1)
+  -> create new java package (e.g java.com)
+  -> configue Built path by right clicking on lib TAB anf the add LIBRARY by selecting on the TestNG
+  -> Click on Add jars button by JSO-simple jar
+  
+3. Test Class:
+Next we create a test class which will cover CRUD(Create-Read-Update-Delete) operaions
+create new class File ->New ->TestNg and named it (e.g. testOperation.java)
+
+4. Test Method:
+Fiest @BeforeMethod is executing and then eventually @AfterMethod will execute after each Test method.
+The @AfterClass annotation will be executed only once after all the test methods are invoked in the class but we have not covered it in our project.
+Similary @AfterGroups and @BeforeGroups test method is also not use by us.
+
+5. Running the Tests
+now we have completed our script development task ,so let run our test by clicking our testOperation.java and select option 'Run as TestNG Test'
+
+
 Our Testing strategy vs Open source project testing
 
 We have performed the UI and APi testing of selected amount of features from the open source project
