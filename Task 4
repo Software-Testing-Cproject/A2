@@ -21,3 +21,16 @@ Our Testing strategy vs Open source project testing
 
 We have performed the UI and APi testing of selected amount of features from the open source project
 while in the open source project the API testing is done only.We have adopte the Selenium framework 
+along with the Rest Assured additional library.
+
+OUR TESTING STRATEGY
+
+UI TESTING:
+
+For ui testing ,we have designed 3 types of main funtions:
+  1-SetUp
+  2-Test functions (one or many).
+  3-Teardown
+ 
+ 
+To search the element to be tested,we search the element by using xpath and css selector.
