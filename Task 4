@@ -1,10 +1,14 @@
-1. We choosed our open source project for task 4. 
-2. Framework they used for Api testing is Spring RestTemplate and TestNG.
-3. What is Spring RestTemplate?
+                     OPEN SOURCE PROJECT
+We choosed our open source project for task 4. 
+                     FRAMEWORK THEY USED FOR TESTING
+Framework they used for Api testing is Spring RestTemplate and TestNG.
+                     SPRING RESTTEMPLATE
+What is Spring RestTemplate?
 Spring 3 introduced the spring-web package, which includes the spring RestTemplate class.
 The HTTPS protocol is not supported by RestTemplate, but we can use it to test HTTP-based restful web services.
 Overloaded methods for various HTTP methods, including GET, POST, PUT, DELETE, etc., are provided by the RestTemplate class.
-....................Steps they followed: They followed the steps using postman tool
+                    STEPS FOR TESTING
+They followed the steps manually by using postman tool
 1- #1) First, they know the endpoint of the API that they want to access.
 2- They set Headers and Body for the test case.
 3- They set Accept: application/JSON and Content-Type: application/JSON.
