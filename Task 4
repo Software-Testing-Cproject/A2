@@ -9,7 +9,7 @@ The HTTPS protocol is not supported by RestTemplate, but we can use it to test H
 Overloaded methods for various HTTP methods, including GET, POST, PUT, DELETE, etc., are provided by the RestTemplate class.
                     STEPS FOR TESTING
 They followed the steps manually by using postman tool
-1- #1) First, they know the endpoint of the API that they want to access.
+1- First, they know the endpoint of the API that they want to access.
 2- They set Headers and Body for the test case.
 3- They set Accept: application/JSON and Content-Type: application/JSON.
 4- They set the appropriate HTTP method like POST, DELETE, PUT.a
