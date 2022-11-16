@@ -64,3 +64,5 @@ For ui testing ,we have designed 3 types of main funtions:
  
  
 To search the element to be tested,we search the element by using xpath and css selector.
+
+API TESTING:
