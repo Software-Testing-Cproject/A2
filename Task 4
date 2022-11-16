@@ -11,3 +11,5 @@ Overloaded methods for various HTTP methods, including GET, POST, PUT, DELETE, e
 4- They set the appropriate HTTP method like POST, DELETE, PUT.a
 5- They send a request to the Rest service server.
 
+Our Testing strategy vs Open source project testing
+
