@@ -13,3 +13,5 @@ Overloaded methods for various HTTP methods, including GET, POST, PUT, DELETE, e
 
 Our Testing strategy vs Open source project testing
 
+We have performed the UI and APi testing of selected amount of features from the open source project
+while in the open source project the API testing is done only.We have adopte the Selenium framework 
