@@ -59,8 +59,26 @@ UI TESTING:
 
 For ui testing ,we have designed 3 types of main funtions:
   1-SetUp
+     Example:
+     @BeforeMethod
+	public void setUp()
+	{
+	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.get("http://localhost");
+	driver.manage().window().maximize();
+   
+	}
   2-Test functions (one or many).
   3-Teardown
+    Example:
+    @AfterMethod
+	public void tearDown()
+	{
+		 
+	driver.quit();
+	}
+	
  
  
 To search the element to be tested,we search the element by using xpath and css selector.
