@@ -23,16 +23,16 @@ Sencond we use ECLISE as Integrated Development Environment for our API and UI a
 Thirdly we run TestNG for the Eclipse ping-in
 
 1. steps in Eclipse:
-  -> select Help
-  -> click on Add ->Enter http://beust.com/eclipse/
-  -> select the checkbox of TestNG and click Next button
+  • select Help 
+  • click on Add ->Enter http://beust.com/eclipse/
+  • select the checkbox of TestNG and click Next button
   
   
 2. Project SetUp:
-  -> create File -> New ->Java Project ->Name it (let suppose we named it as testSuit1)
-  -> create new java package (e.g java.com)
-  -> configue Built path by right clicking on lib TAB anf the add LIBRARY by selecting on the TestNG
-  -> Click on Add jars button by JSO-simple jar
+  • create File -> New ->Java Project ->Name it (let suppose we named it as testSuit1)
+  • create new java package (e.g java.com)
+  • configue Built path by right clicking on lib TAB anf the add LIBRARY by selecting on the TestNG
+  • Click on Add jars button by JSO-simple jar
   
 3. Test Class:
 Next we create a test class which will cover CRUD(Create-Read-Update-Delete) operaions
@@ -59,26 +59,8 @@ UI TESTING:
 
 For ui testing ,we have designed 3 types of main funtions:
   1-SetUp
-     Example:
-     @BeforeMethod
-	public void setUp()
-	{
-	System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
-	driver = new ChromeDriver();
-	driver.get("http://localhost");
-	driver.manage().window().maximize();
-   
-	}
   2-Test functions (one or many).
   3-Teardown
-    Example:
-    @AfterMethod
-	public void tearDown()
-	{
-		 
-	driver.quit();
-	}
-	
  
  
 To search the element to be tested,we search the element by using xpath and css selector.
