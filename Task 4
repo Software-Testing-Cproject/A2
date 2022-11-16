@@ -4,3 +4,10 @@
 Spring 3 introduced the spring-web package, which includes the spring RestTemplate class.
 The HTTPS protocol is not supported by RestTemplate, but we can use it to test HTTP-based restful web services.
 Overloaded methods for various HTTP methods, including GET, POST, PUT, DELETE, etc., are provided by the RestTemplate class.
+....................Steps they followed: They followed the steps using postman tool
+1- #1) First, they know the endpoint of the API that they want to access.
+2- They set Headers and Body for the test case.
+3- They set Accept: application/JSON and Content-Type: application/JSON.
+4- They set the appropriate HTTP method like POST, DELETE, PUT.a
+5- They send a request to the Rest service server.
+
